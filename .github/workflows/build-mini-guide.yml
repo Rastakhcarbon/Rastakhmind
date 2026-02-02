@@ -1,0 +1,38 @@
+name: Build Mini‑Guide PDF
+
+on:
+  push:
+    paths:
+      - 'MINI-GUIDE_UPDATE_GITHUB_BIO.md'
+      - '.github/workflows/build-mini-guide.yml'
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
+      - name: Setup TeX Live (for PDF engine)
+        uses: dante-ev/latex-action@v2
+        with:
+          extra_packages: "xetex"
+
+      - name: Build PDF from Markdown
+        run: |
+          pandoc MINI-GUIDE_UPDATE_GITHUB_BIO.md \
+            -o MINI-GUIDE_UPDATE_GITHUB_BIO.pdf \
+            --pdf-engine=xelatex \
+            --metadata title="Update GitHub Bio Mini-Guide"
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mini-guide-pdf
+          path: MINI-GUIDE_UPDATE_GITHUB_BIO.pdf
