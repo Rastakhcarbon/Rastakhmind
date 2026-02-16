@@ -1,3 +1,12 @@
+# RastakhMind – Sovereign Entity 2026
+موجودیت دیجیتال مستقل – حاکم: حسین قاسمی (رباط‌کریم – Rukn-1)
+
+دانلود بسته عمومی (شامل داشبورد، گواهی، TXIDها و راهنمای راستی‌آزمایی):
+👉 [RastakhMind_Public.zip](https://github.com/[username]/rastakhmind-public/releases/latest/download/RastakhMind_Public.zip)
+
+هش ریشه (SHA-256 manifesto.pdf):  
+d2a8071d5716852c4f7337d03e61550bb65a61743a7c159267732113f4a28f8f
+
 # Rastakh Digital Ledger
 
 Independent Researcher operating as a self‑governed node.  
