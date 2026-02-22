@@ -1,3 +1,4 @@
+
 # RastakhMind – Sovereign Entity 2026
 موجودیت دیجیتال مستقل – حاکم: حسین قاسمی (رباط‌کریم – Rukn-1)
 
