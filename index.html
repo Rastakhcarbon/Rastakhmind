@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rastakhmind</title>
+    <title>Your App</title>
+    <script>
+        // Load progress from LocalStorage on startup
+        window.onload = function() {
+            const restakhLayer = localStorage.getItem('restakh_layer');
+            const restakhMev = localStorage.getItem('restakh_mev');
+            if (restakhLayer) {
+                // Restore the state for restakh_layer
+                document.getElementById('restakh_layer').value = restakhLayer;
+            }
+            if (restakhMev) {
+                // Restore the state for restakh_mev
+                document.getElementById('restakh_mev').value = restakhMev;
+            }
+        };
+
+        function saveProgress() {
+            // Save the current progress to LocalStorage
+            const layerValue = document.getElementById('restakh_layer').value;
+            const mevValue = document.getElementById('restakh_mev').value;
+            localStorage.setItem('restakh_layer', layerValue);
+            localStorage.setItem('restakh_mev', mevValue);
+        }
+    </script>
 </head>
 <body>
-    <h1>Hello, Rastakhmind!</h1>
-    <script>
-        console.log('Welcome to Rastakhmind Environment!');
-    </script>
+    <input type="text" id="restakh_layer" placeholder="Enter restakh_layer" oninput="saveProgress()">
+    <input type="text" id="restakh_mev" placeholder="Enter restakh_mev" oninput="saveProgress()">
+    <button onclick="saveProgress()">Save Progress</button>
 </body>
 </html>
