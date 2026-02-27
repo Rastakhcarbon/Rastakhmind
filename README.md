@@ -1,33 +1,20 @@
+# 🌿 Rastakhmind Interactive Chart
+> **The official resonance engine for the Restakh Protocol.**
 
-# RastakhMind – Sovereign Entity 2026
-موجودیت دیجیتال مستقل – حاکم: حسین قاسمی (رباط‌کریم – Rukn-1)
+![Restakh Banner](https://img.shields.io/badge/Status-Live-00ff41?style=for-the-badge&logo=github)
+![Layer](https://img.shields.io/badge/Layer-13-blueviolet?style=for-the-badge)
 
-دانلود بسته عمومی (شامل داشبورد، گواهی، TXIDها و راهنمای راستی‌آزمایی):
-👉 [RastakhMind_Public.zip](https://github.com/[username]/rastakhmind-public/releases/latest/download/RastakhMind_Public.zip)
+## 🌌 Overview
+This interactive dashboard visualizes the **Quantum Resonance Flux** and **MEV Harvesting** logic within the Restakh environment. Built with high-performance JS and Chart.js.
 
-هش ریشه (SHA-256 manifesto.pdf):  
-d2a8071d5716852c4f7337d03e61550bb65a61743a7c159267732113f4a28f8f
+### ⚡ Features
+- **Layer Activation:** Incremental progression through system layers.
+- **MEV Harvesting:** Simulated real-time value extraction logic.
+- **Persistence:** On-device state storage using `LocalStorage`.
+- **UI:** Neo-Noir Green interface (#00ff41).
 
-# Rastakh Digital Ledger
-
-Independent Researcher operating as a self‑governed node.  
-All research, execution, and documentation are conducted without institutional affiliation.  
-Legitimacy derives from transparency, verifiable output, and continuity.
-
-Project: Rastakh Digital Ledger  
-Lead: Hussein Ghasemi  
-Role: Independent Researcher & Software Developer  
-Location: Robat Karim, Iran  
-Contact: rastakhcarbon@gmail.com  
-Last Verified: 2026-01-30  
-Document Version: 1.0
+## 🚀 Live Access
+[Click here to view the Live Chart](https://rastakhcarbon.github.io/Rastakhmind/)
 
 ---
-
-## Overview
-
-Rastakh Digital Ledger is a standards-driven, zero-dependency, culturally-aware digital ledger designed to represent time and records using the Solar Hijri (Persian / Jalaali) calendar natively via browser Intl APIs. The project prioritizes transparency, auditability, and long-term maintainability by relying on standardized platform capabilities rather than third-party libraries or custom calendar math.
-
----
-
-(Additional repository files: SYSTEM_SPECIFICATION.md, PROVENANCE_AND_INTEGRITY.md, MANIFESTO.md, .github/workflows/main.yml, github_push.py, run_push.sh)
+*Architected by Hussein Ghasemi | 2026*
