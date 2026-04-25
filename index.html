@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Document</title>
+    <title>Your App</title>
+    <script>
+        // Load progress from LocalStorage on startup
+        window.onload = function() {
+            const restakhLayer = localStorage.getItem('restakh_layer');
+            const restakhMev = localStorage.getItem('restakh_mev');
+            if (restakhLayer) {
+                // Restore the state for restakh_layer
+                document.getElementById('restakh_layer').value = restakhLayer;
+            }
+            if (restakhMev) {
+                // Restore the state for restakh_mev
+                document.getElementById('restakh_mev').value = restakhMev;
+            }
+        };
+
+        function saveProgress() {
+            // Save the current progress to LocalStorage
+            const layerValue = document.getElementById('restakh_layer').value;
+            const mevValue = document.getElementById('restakh_mev').value;
+            localStorage.setItem('restakh_layer', layerValue);
+            localStorage.setItem('restakh_mev', mevValue);
+        }
+    </script>
 </head>
 <body>
-<section class="bio-hero">
-  <h1>Independent Researcher — Self‑Governed Node</h1>
-  <p>Independent Researcher operating as a self‑governed node. All research, execution, and documentation are conducted without institutional affiliation. Legitimacy derives from transparency, verifiable output, and continuity.</p>
-</section>
+    <input type="text" id="restakh_layer" placeholder="Enter restakh_layer" oninput="saveProgress()">
+    <input type="text" id="restakh_mev" placeholder="Enter restakh_mev" oninput="saveProgress()">
+    <button onclick="saveProgress()">Save Progress</button>
 </body>
 </html>
